@@ -10,7 +10,7 @@
 <body>
     <div class="row">
         <div class="column"><img src="images\portrait2.jpg" alt="Self-Portrait" height=200px></div>
-        <div class="column"><p>Marshall D. Warner</p></div>
+        <div class="column" style="padding-left: 5%;"><p>Marshall D. Warner</p></div>
     </div>
     <h1>WDD 230: Assignment Portal</h1>
 <ul>
@@ -25,5 +25,16 @@
     <li><a href="/lesson10/index.html">Lesson 10 Home Page</a></li>
     <li><a href="/lesson11/index.html">Lesson 11 Home Page</a></li>
 </ul>
+<footer>
+    <div class="row" style="padding-left: 5%;">
+        <p>© 2022 .:|:. Marshall D. Warner .:|:. Idaho</p>
+        <p id="demo" style="color:yellow"></p>
+        
+        <script>
+        let text = document.lastModified;
+        document.getElementById("demo").innerHTML = "Last Updated: " + text;
+        </script>
+    </div>
+</footer>
 </body>
 </html>
