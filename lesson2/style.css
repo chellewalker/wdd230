@@ -1,0 +1,107 @@
+header {
+    display: block;
+    background-color:black;
+    color:white;
+    padding:20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+footer {
+    display: block;
+    background-color:black;
+    color:white;
+    padding:20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+	max-width: 767px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8rem;
+}
+
+main section h2 {
+	color: white;
+    background-color: rgb(70, 70, 70);
+    padding:20px;
+    border-radius: 5px;
+    position: relative;
+        top: -10%;
+}
+
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	background-color: #eee;
+    border-radius: 5px;
+}
+
+main section p {
+	padding-left: 3%;
+}
+
+main section:nth-child(2) {
+	display: none;
+	margin: 0.5rem;
+}
+
+
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	main section:nth-child(2) {
+		display: block;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 2;
+	}
+
+	main section picture {
+		display: block;
+	}
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+}
+
+/* Phone Views ******************************/
+@media only screen and (max-width: 37.5em) {
+	main {
+		grid-template-columns: 1fr;
+	}
+
+	main section:nth-child(2) {
+		display: block;
+	}
+
+	main section picture {
+		display: block;
+	}
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 1;
+	}
+}
