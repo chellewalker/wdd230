@@ -16,7 +16,6 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
 }
 main {
-	max-width: 767px;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -30,7 +29,7 @@ main section h2 {
     padding:20px;
     border-radius: 5px;
     position: relative;
-        top: -10%;
+        top: -3.5%;
 }
 
 main section {
@@ -44,6 +43,10 @@ main section p {
 	padding-left: 3%;
 }
 
+main section a {
+	padding-left: 3%;
+}
+
 main section:nth-child(2) {
 	display: none;
 	margin: 0.5rem;
@@ -52,7 +55,7 @@ main section:nth-child(2) {
 
 
 /* Tablet Views ******************************/
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 52.5em) {
 	main {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -76,7 +79,7 @@ main section:nth-child(2) {
 }
 
 /* Phone Views ******************************/
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 52.5em) {
 	main {
 		grid-template-columns: 1fr;
 	}
@@ -96,7 +99,7 @@ main section:nth-child(2) {
 }
 
 /* Desktop Views ****************************/
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 80em) {
 	main {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
