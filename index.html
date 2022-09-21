@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Index for WDD 230">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type = "text/javascript" src="javascripts\lupdate.js"></script>
+    <script type = "text/javascript" src="javascripts\cyear.js"></script>
     <link rel="stylesheet" href="styles\style.css">
     <title>Directory</title>
 </head>
 <body>
-    <div class="row">
+    <header><div class="row">
         <p><div class="column"><img src="images\portrait2.jpg" alt="Self-Portrait" height=200px></div>
         <div class="column" style="padding-top: 6%;">Marshall D. Warner</div></p>
-    </div>
+    </div></header>
+<main>
     <h1>WDD 230: Assignment Portal</h1>
 <ul>
     <li><a href="/lesson2/design-principles.html">Lesson 2 Home Page</a></li>
@@ -25,14 +30,12 @@
     <li><a href="/lesson10/index.html">Lesson 10 Home Page</a></li>
     <li><a href="/lesson11/index.html">Lesson 11 Home Page</a></li>
 </ul>
+</main>
 <footer>
     <div class="row" style="padding-left: 5%;">
-        <p>© 2022 .:|:. Marshall D. Warner .:|:. Idaho</p>
-        <p id="lupdate" style="color:yellow; padding-left: 2%;"></p>
-        
-        <script>
-        let text = document.lastModified;
-        document.getElementById("lupdate").innerHTML = "Last Updated: " + text;
+        <script type="text/javascript" id="jstext">
+            cyear()
+            lupdate()
         </script>
     </div>
 </footer>
