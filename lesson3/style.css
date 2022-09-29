@@ -42,6 +42,9 @@ main section {
 main section p {
 	padding-left: 3%;
 }
+main section h1, h3 {
+	padding-left: 3%;
+}
 
 main section a {
 	padding-left: 3%;
