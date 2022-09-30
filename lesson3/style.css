@@ -127,6 +127,13 @@ nav a:hover {
 		height: auto;
 		border: 1px solid #bbb;
 	}
+	nav {
+		flex-direction: column;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
 }
 
 /* Desktop Views ****************************/
