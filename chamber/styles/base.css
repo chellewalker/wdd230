@@ -65,7 +65,6 @@ main section a {
 	width: 0;
 	position: absolute;
 	z-index: 1;
-
 	overflow-x: hidden;
 
 	background-color: #708080;
