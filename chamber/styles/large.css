@@ -1,0 +1,13 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 80em) {
+	main {
+		grid-template-columns: 1fr 2fr 1fr;
+	}
+
+	main section:nth-child(2) {
+		grid-row: span 2;
+	}
+    main section:nth-child(3) {
+		grid-row: span 3;
+	}
+}
