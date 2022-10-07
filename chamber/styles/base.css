@@ -10,7 +10,6 @@ header section {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	grid-template-rows: 30% 60%;
-	padding: -20px;
 }
 header section p {
 	text-align: left;
