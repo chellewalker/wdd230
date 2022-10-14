@@ -1,8 +1,4 @@
-const list = document.querySelector('ul');
-const input = document.querySelector('input');
-const button = document.querySelector('button');
-
-button.addEventListener('click', () => {
+function addEventListener(input) {
   const myItem = input.value;
   input.value = '';
 
@@ -21,4 +17,4 @@ button.addEventListener('click', () => {
   });
 
   input.focus();
-});
+};
