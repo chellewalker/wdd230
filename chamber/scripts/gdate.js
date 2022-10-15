@@ -9,5 +9,5 @@ function gdate() {
 
     var dayn = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
-    document.write('<p>'+dayn[currentTime.getDay()]+', '+day+' '+monthn[currentTime.getMonth()]+' '+year+'</p>');
+    document.write(dayn[currentTime.getDay()]+', '+day+' '+monthn[currentTime.getMonth()]+' '+year);
 }
