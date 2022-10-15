@@ -29,4 +29,8 @@
 	.sidebar {
 		grid-template-columns: 1fr;
 	}
+
+	.sidebar .closebtn {
+		right: 1%;
+	}
 }
