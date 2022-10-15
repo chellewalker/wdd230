@@ -29,7 +29,7 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
 }
 main {
-	margin: 0 auto;
+	margin: auto;
 	display: grid;
 	grid-template-columns: 1fr;
     font-family: Arial, Helvetica, sans-serif;
@@ -53,6 +53,9 @@ main section {
 }
 
 main section p {
+	padding-left: 3%;
+}
+main section li {
 	padding-left: 3%;
 }
 main section h1, h3 {
@@ -124,20 +127,20 @@ main section a {
   }
 
 main section button {
-	margin:auto;
-	width: 80%;
-	padding: 2%;
-	border: 3px solid green;
+	margin: auto;
+  	width: 80%;
+  	border: 3px solid green;
+  	padding: 10px;
+
 	border-radius: 20px;
 	background-color: green;
 	color: white;
 	font-size: x-large;
-	text-shadow:1px 1px 10px whitesmoke, 1px 1px 10px #ccc;
+	text-shadow:1px 1px 10px rgb(200, 200, 200), 1px 1px 10px #ccc;
 	box-shadow: 
-	-2px 4px 4px rgb(63, 63, 63),
-	-3px 6px 6px gray,
-	-4px 8px 8px lightgray;
-text-shadow: 2px 2px rgb(85, 85, 85);
+		-2px 4px 4px rgb(63, 63, 63),
+		-3px 6px 6px gray,
+		-4px 8px 8px lightgray;
   }
 
 /* Phone Views ******************************/
