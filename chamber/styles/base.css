@@ -118,6 +118,23 @@ main section a {
 	border: none;
   }
 
+main section button {
+	margin:auto;
+	width: 80%;
+	padding: 2%;
+	border: 3px solid green;
+	border-radius: 20px;
+	background-color: green;
+	color: white;
+	font-size: x-large;
+	text-shadow:1px 1px 10px whitesmoke, 1px 1px 10px #ccc;
+	box-shadow: 
+	-2px 4px 4px rgb(63, 63, 63),
+	-3px 6px 6px gray,
+	-4px 8px 8px lightgray;
+text-shadow: 2px 2px rgb(85, 85, 85);
+  }
+
 /* Phone Views ******************************/
 @media only screen and (max-width: 52.5em) {
 	main {
