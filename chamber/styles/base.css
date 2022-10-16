@@ -11,6 +11,9 @@ header {
 header img {
 	border-radius: 5px;
 }
+header a img {
+	border-radius: 5px;
+}
 header section {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
@@ -69,7 +72,6 @@ main section a {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
 	border-radius: 10px;
   }
 
@@ -170,4 +172,16 @@ main section button:hover {
 	.sidebar {
 		grid-template-columns: 1fr;
 	}
+	header img {
+		max-width: 70%;
+		height: auto;
+	}
+	header a img {
+		max-width: 30%;
+		height: auto;
+	}
+	.center {
+		max-width: 70%;
+		height: auto;
+	  }
 }

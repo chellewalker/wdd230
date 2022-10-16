@@ -10,4 +10,16 @@
     main section:nth-child(3) {
 		grid-row: span 3;
 	}
+	header img {
+		max-width: 25%;
+		height: auto;
+	}
+	header a img {
+		max-width: 10%;
+		height: auto;
+	}
+	.center {
+		max-width: 60%;
+		height: auto;
+	  }
 }

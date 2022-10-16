@@ -29,4 +29,16 @@
 	.sidebar {
 		grid-template-columns: 1fr;
 	}
+	header img {
+		max-width: 45%;
+		height: auto;
+	}
+	header a img {
+		max-width: 20%;
+		height: auto;
+	}
+	.center {
+		max-width: 50%;
+		height: auto;
+	  }
 }
