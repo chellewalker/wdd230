@@ -12,9 +12,8 @@ function hero() {
         document.write('large')
      }
     // Medium
-    else if (width > 840) {
-        if (width < 1280) {
+    else {
         document.write('<img src="images/golf.webp" alt="golfing-image" class="center">')
         document.write('medium')
-        }}
+        }
 }
