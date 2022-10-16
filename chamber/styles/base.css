@@ -164,7 +164,7 @@ main section button:hover {
 }
 
 /* Phone Views ******************************/
-@media only screen and (max-width: 52.5em) {
+@media only screen and (max-width: 840px) {
 	main {
 		grid-template-columns: 1fr;
 	}
