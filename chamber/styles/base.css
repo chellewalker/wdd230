@@ -167,9 +167,10 @@ main section button:hover {
 	text-align: center;
   }
 .bottom-left {
+	color: white;
 	position: absolute;
 	bottom: 8px;
-	left: 16px;
+	left: 40%;
   }
 
 /* Phone Views ******************************/
