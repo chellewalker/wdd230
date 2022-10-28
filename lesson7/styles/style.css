@@ -24,7 +24,7 @@ footer {
 	border: 1px solid #444;
 	margin: 20px;
   }
-  img{
+  .img-wrapper img{
 	height: 400px;
 	width: 300px;
 	object-fit: cover;
