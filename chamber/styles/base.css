@@ -162,25 +162,27 @@ main section button:hover {
   	border: 3px solid darkgreen;
 	background-color: darkgreen;
 }
+
 .container {
 	position: relative;
 	text-align: center;
-  }
+
+}
 .bottom-left {
 	color: white;
 	position: absolute;
 	bottom: 8px;
 	left: 40%;
-  }
+}
 
-  .img-wrapper{
+.img-wrapper{
 	border: 1px solid #444;
 	margin: 20px;
-  }
-  .img-wrapper img{
+}
+.img-wrapper img{
 	height: 250px;
 	width: auto;
-  }
+}
 
 /* Phone Views ******************************/
 @media only screen and (max-width: 840px) {

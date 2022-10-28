@@ -41,4 +41,10 @@
 		max-width: 50%;
 		height: auto;
 	  }
+	.img-wrapper img:hover{
+		box-shadow: 
+		-2px 4px 4px rgb(63, 63, 63),
+		-3px 6px 6px gray,
+		-4px 8px 8px lightgray;
+	}
 }
