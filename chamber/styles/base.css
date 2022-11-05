@@ -214,6 +214,19 @@ form section h2 {
     position: relative;
         top: -15%;
 }
+.member {
+	text-align: left;
+	margin-left: 10%;
+	margin-top: -5%;
+}
+.submit {
+	background-color: white;
+	border-radius: 5px;
+}
+.submit:hover {
+	background-color: lightgray;
+	border-radius: 5px;
+}
 
 /* Phone Views ******************************/
 @media only screen and (max-width: 840px) {

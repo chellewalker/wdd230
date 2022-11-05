@@ -59,13 +59,19 @@ gbanner()
         </section>
         <section>
             <h2>Membership Selection</h2>
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname"><br><br>
+            <div class="member">
+            <input type="radio" id="np" name="membership" value="NP">
+            <label for="np">NP Membership</label><br>
+            <input type="radio" id="bronze" name="membership" value="Bronze">
+            <label for="bronze">Bronze Membership</label><br>
+            <input type="radio" id="silver" name="membership" value="Silver">
+            <label for="silver">Silver Membership</label><br>
+            <input type="radio" id="gold" name="membership" value="Gold">
+            <label for="gold">Gold Membership</label>
+            </div>
         </section>
             <br>
-            <p>submit</p>
+            <input type="submit" value="Submit" class="submit">
             <br>
         </form>
 <footer>
