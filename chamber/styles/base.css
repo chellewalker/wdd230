@@ -185,7 +185,7 @@ main section button:hover {
 }
 form {
 	text-align: center;
-	padding: 2%;
+	padding: 5%;
 
 	margin: 0.2rem;
 	border: 1px solid #bbb;
@@ -218,6 +218,9 @@ form section h2 {
 	text-align: left;
 	margin-left: 10%;
 	margin-top: -5%;
+}
+.member p {
+	font-style: italic;
 }
 .submit {
 	background-color: white;

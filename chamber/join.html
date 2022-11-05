@@ -43,31 +43,57 @@ gbanner()
     <a href="discover.html">Our Amenities</a>
     <a href="contact.html">Contact Us</a>
   </div>
-        <form><section>
+        <form target="_blank" action="thankyou.html"><section>
             <h2>Personal Details</h2>
             <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname"><br><br>
+            <input type="text" id="fname" name="fname" required><br><br>
             <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname"><br><br>
+            <input type="text" id="lname" name="lname" required><br><br>
+            <label for="title">Suffix:</label>
+            <input type="text" id="title" name="title" pattern="[A-Za-z0-9-_.]+$" placeholder="Mr./Ms./etc"><br><br>
+            <label for="description">Reservation details (date, time, and desired amenities):</label><br>
+            <textarea id="description" name="description" required></textarea>
         </section>
         <section>
-            <h2>Personal Details</h2>
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname"><br><br>
+            <h2>Contact Information</h2>
+            <label for="tel">Cell Phone Number:</label>
+            <input type="text" id="tel" name="tel" required><br><br>
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" required><br><br>
+            <p>Preferred Contact Method:</p><br>
+            <div class="member">
+                <input type="radio" id="call" name="contact" value="NP">
+                <label for="cell">Calling</label><br>
+                <input type="radio" id="text" name="contact" value="Bronze">
+                <label for="text">Texting</label><br>
+                <input type="radio" id="mail" name="contact" value="Bronze">
+                <label for="mail">Email</label><br>
+                <input type="hidden" id="date" name="date" value="CurrentTime"> 
+                <input type="hidden" id="time" name="time" value="CurrentDate">            </div><br>
         </section>
         <section>
             <h2>Membership Selection</h2>
             <div class="member">
             <input type="radio" id="np" name="membership" value="NP">
-            <label for="np">NP Membership</label><br>
+            <label for="cell">NP Membership</label><br>
+                <p>
+                    Non-membership with at-rate amenities. Standard rate.
+                </p>
             <input type="radio" id="bronze" name="membership" value="Bronze">
             <label for="bronze">Bronze Membership</label><br>
+                <p>
+                    Basic membership with priority seating. 5$ monthly fee.
+                </p>
             <input type="radio" id="silver" name="membership" value="Silver">
             <label for="silver">Silver Membership</label><br>
+                <p>
+                    Standard membership with discount amenities. 10$ monthly fee.
+                </p>
             <input type="radio" id="gold" name="membership" value="Gold">
             <label for="gold">Gold Membership</label>
+                <p>
+                    Advanced membership with all available perks. 20$ monthly fee.
+                </p>
             </div>
         </section>
             <br>
@@ -81,5 +107,17 @@ gbanner()
         lupdate()
     </script>
 </footer>
+<script type="text/javascript">
+    var d = new Date();
+
+    // Set the value of the "date" field
+    document.getElementById("date").value = d.toDateString();
+
+    // Set the value of the "time" field
+    var hours = d.getHours();
+    var mins = d.getMinutes();
+    var seconds = d.getSeconds();
+    document.getElementById("time").value = hours + ":" + mins + ":" + seconds;
+</script>
 </body>
 </html>
