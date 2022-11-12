@@ -1,4 +1,4 @@
-const getData = '/data.json';
+const getData = 'https://chellewalker.github.io/wdd230/chamber/scripts/data.json';
 const cards = document.querySelector('.cards');
 
 fetch(getData)
@@ -7,11 +7,11 @@ fetch(getData)
   })
   .then(function (jsonObject) {
     console.table(jsonObject);
-    const prophets = jsonObject['prophets'];
-    prophets.forEach(displayProphets);
+    const sponsors = jsonObject['sponsors'];
+    sponsors.forEach(displaySponsors);
   });
   
-  function displayProphets(prophet) {
+  function displaySponsors(sponsor) {
     // Create properties
     let card = document.createElement('section');
     let title = document.createElement('h2');
@@ -20,20 +20,20 @@ fetch(getData)
     let place = document.createElement('p');
     let space = document.createElement('br');
       
-    title.textContent = `${prophet.name} ${prophet.lastname}`;
-    date.textContent = `Birthday: ${prophet.birthdate}.`;
-    place.textContent = `Birthplace: ${prophet.birthplace}.`;
+    title.textContent = `${sponsor.name} ${sponsor.lastname}`;
+    date.textContent = `Birthday: ${sponsor.birthdate}.`;
+    place.textContent = `Birthplace: ${sponsor.birthplace}.`;
   
-    portrait.setAttribute('src', prophet.imageurl);
+    portrait.setAttribute('src', sponsor.imageurl);
 
-    if (prophet.order == 1) {
-      portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}st Latter-day President `);
-    } else if (prophet.order == 2) {
-      portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}nd Latter-day President `);
-    } else if (prophet.order == 3) {
-      portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}rd Latter-day President `);
+    if (sponsor.order == 1) {
+      portrait.setAttribute('alt', `Portrait of ${sponsor.name} ${prophet.lastname} - ${prophet.order}st Latter-day President `);
+    } else if (sponsor.order == 2) {
+      portrait.setAttribute('alt', `Portrait of ${sponsor.name} ${prophet.lastname} - ${prophet.order}nd Latter-day President `);
+    } else if (sponsor.order == 3) {
+      portrait.setAttribute('alt', `Portrait of ${sponsor.name} ${prophet.lastname} - ${prophet.order}rd Latter-day President `);
     } else {
-      portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}th Latter-day President `);
+      portrait.setAttribute('alt', `Portrait of ${sponsor.name} ${prophet.lastname} - ${prophet.order}th Latter-day President `);
     }
     portrait.setAttribute('loading', 'lazy');
     place.setAttribute('class', 'para');
