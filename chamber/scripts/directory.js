@@ -14,37 +14,27 @@ fetch(getData)
   function displaySponsors(sponsor) {
     // Create properties
     let card = document.createElement('section');
-    let title = document.createElement('h2');
+    let name = document.createElement('h2');
     let logo = document.createElement('img');
     let address = document.createElement('p');
     let phone = document.createElement('p');
     let website = document.createElement('p');
     let space = document.createElement('br');
       
+    name.textContent = `${sponsor.name}`;
     logo.textContent = `${sponsor.logo}`;
     address.textContent = `${sponsor.address}`;
     phone.textContent = `${sponsor.phone}`;
     website.textContent = `${sponsor.website}`;
   
-    portrait.setAttribute('src', sponsor.imageurl);
-
-    if (sponsor.order == 1) {
-      portrait.setAttribute('alt', `Portrait of ${sponsor.name} ${prophet.lastname} - ${prophet.order}st Latter-day President `);
-    } else if (sponsor.order == 2) {
-      portrait.setAttribute('alt', `Portrait of ${sponsor.name} ${prophet.lastname} - ${prophet.order}nd Latter-day President `);
-    } else if (sponsor.order == 3) {
-      portrait.setAttribute('alt', `Portrait of ${sponsor.name} ${prophet.lastname} - ${prophet.order}rd Latter-day President `);
-    } else {
-      portrait.setAttribute('alt', `Portrait of ${sponsor.name} ${prophet.lastname} - ${prophet.order}th Latter-day President `);
-    }
-    portrait.setAttribute('loading', 'lazy');
-    place.setAttribute('class', 'para');
+    logo.setAttribute('src', sponsor.logo);
+    website.setAttribute('src', sponsor.website);
   
-    card.appendChild(title);
-    card.appendChild(date);
-    card.appendChild(place);
+    card.appendChild(name);
+    card.appendChild(address);
+    card.appendChild(phone);
     card.appendChild(space);
-    card.appendChild(portrait);
+    card.appendChild(logo);
   
     document.querySelector('div.cards').appendChild(card);
   }
