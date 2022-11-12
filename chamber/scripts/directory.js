@@ -1,4 +1,4 @@
-const getData = 'https://chellewalker.github.io/wdd230/chamber/scripts/data.json';
+const getData = 'scripts/data.json';
 const cards = document.querySelector('.cards');
 
 fetch(getData)
@@ -36,5 +36,5 @@ fetch(getData)
     card.appendChild(space);
     card.appendChild(logo);
   
-    document.querySelector('div.cards').appendChild(card);
+    document.querySelector('div.cards').appendChild(cards);
   }
