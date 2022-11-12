@@ -15,14 +15,16 @@ fetch(getData)
     // Create properties
     let card = document.createElement('section');
     let title = document.createElement('h2');
-    let portrait = document.createElement('img');
-    let date = document.createElement('p');
-    let place = document.createElement('p');
+    let logo = document.createElement('img');
+    let address = document.createElement('p');
+    let phone = document.createElement('p');
+    let website = document.createElement('p');
     let space = document.createElement('br');
       
-    title.textContent = `${sponsor.name} ${sponsor.lastname}`;
-    date.textContent = `Birthday: ${sponsor.birthdate}.`;
-    place.textContent = `Birthplace: ${sponsor.birthplace}.`;
+    logo.textContent = `${sponsor.logo}`;
+    address.textContent = `${sponsor.address}`;
+    phone.textContent = `${sponsor.phone}`;
+    website.textContent = `${sponsor.website}`;
   
     portrait.setAttribute('src', sponsor.imageurl);
 
