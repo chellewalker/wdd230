@@ -11,46 +11,47 @@
       },
       {
         "name": "Surge Web Design",
-        "address": "2115 S Vista Avenue Boise ID 83705",
-        "phone": "(208) 342-9386",
-        "website": "https://idahowebsites.com/",
+        "address": "4072 E Arch Drive Meridian ID 83646",
+        "phone": "(208) 631-4984",
+        "website": "https://surgewebdesign.com/",
         "logo": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg",
-        "membership": "Bronze",
+        "membership": "Silver",
         "order": 2
       },
       {
         "name": "Graphic Zen",
-        "address": "2115 S Vista Avenue Boise ID 83705",
-        "phone": "(208) 342-9386",
-        "website": "https://idahowebsites.com/",
+        "address": "1788 E Summerplace Court Meridian ID 83646",
+        "phone": "(208) 631-4984",
+        "website": "https://graphiczen.com/",
         "logo": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg",
-        "membership": "Bronze",
+        "membership": "Gold",
         "order": 3
       },
       {
         "name": "Peppershock Media",
-        "address": "2115 S Vista Avenue Boise ID 83705",
-        "phone": "(208) 342-9386",
-        "website": "https://idahowebsites.com/",
+        "address": "1215 3rd Street Nampa ID 83651",
+        "phone": "(208) 461-5070",
+        "website": "https://peppershock.com/",
         "logo": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg",
         "membership": "Bronze",
         "order": 4
       },
       {
-        "address": "2115 S Vista Avenue Boise ID 83705",
-        "phone": "(208) 342-9386",
-        "website": "https://idahowebsites.com/",
+        "name": "Flash Tech Services",
+        "address": "Star Idaho 83669",
+        "phone": "(208) 488-5810",
+        "website": "https://flashtechnicalservices.com/",
         "logo": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg",
-        "membership": "Bronze",
+        "membership": "Silver",
         "order": 5
       },
       {
         "name": "Metro Express Car Wash, LLC",
-        "address": "2115 S Vista Avenue Boise ID 83705",
-        "phone": "(208) 342-9386",
-        "website": "https://idahowebsites.com/",
+        "address": "1725 E Overland Road Meridian ID 83642",
+        "phone": "(208) 888-4073",
+        "website": "https://metroexpresscarwash.com/",
         "logo": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg",
-        "membership": "Bronze",
+        "membership": "Gold",
         "order": 6
       },
       {
@@ -68,7 +69,7 @@
         "phone": "(208) 342-9386",
         "website": "https://idahowebsites.com/",
         "logo": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg",
-        "membership": "Bronze",
+        "membership": "Silver",
         "order": 8
       },
       {
@@ -77,7 +78,7 @@
         "phone": "(208) 342-9386",
         "website": "https://idahowebsites.com/",
         "logo": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg",
-        "membership": "Bronze",
+        "membership": "Gold",
         "order": 9
       }
     ]
