@@ -1,4 +1,4 @@
-const getData = 'scripts/data.json';
+const getData = './data.json';
 const cards = document.querySelector('.cards');
 
 fetch(getData)
@@ -7,11 +7,11 @@ fetch(getData)
   })
   .then(function (jsonObject) {
     console.table(jsonObject);
-    const sponsors = jsonObject['sponsors'];
-    sponsors.forEach(displaySponsors);
+    const sponsors = jsonObject['businesses'];
+    sponsors.forEach(displaySponsor);
   });
   
-  function displaySponsors(sponsor) {
+  function displaySponsor(sponsorInfo) {
     // Create properties
     let card = document.createElement('section');
     let name = document.createElement('h2');
@@ -21,14 +21,14 @@ fetch(getData)
     let website = document.createElement('p');
     let space = document.createElement('br');
       
-    name.textContent = `${sponsor.name}`;
-    logo.textContent = `${sponsor.logo}`;
-    address.textContent = `${sponsor.address}`;
-    phone.textContent = `${sponsor.phone}`;
-    website.textContent = `${sponsor.website}`;
+    name.textContent = `${sponsorInfo.name}`;
+    address.textContent = `${sponsorInfo.address}`;
+    phone.textContent = `${sponsorInfo.phone}`;
+    website.textContent = `${sponsorInfo.website}`;
   
-    logo.setAttribute('src', sponsor.logo);
-    website.setAttribute('src', sponsor.website);
+    logo.setAttribute('src', sponsorInfo.logo);
+    logo.setAttribute('alt', `Sponsor Image`);
+    logo.setAttribute('loading', `lazy`);
   
     card.appendChild(name);
     card.appendChild(address);
@@ -36,5 +36,5 @@ fetch(getData)
     card.appendChild(space);
     card.appendChild(logo);
   
-    document.querySelector('div.cards').appendChild(cards);
+    document.querySelector('div.cards').appendChild(sponsor);
   }
