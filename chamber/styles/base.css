@@ -230,6 +230,18 @@ form section h2 {
 	background-color: lightgray;
 	border-radius: 5px;
 }
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 0.25%;
+    background-color: whitesmoke;
+    border: 22px solid whitesmoke;
+	padding-bottom: 10%;
+	border-radius: 5px;
+}
+.cards img {
+	border-radius: 5px;
+}
 
 /* Phone Views ******************************/
 @media only screen and (max-width: 840px) {
