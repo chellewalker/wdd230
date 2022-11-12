@@ -36,5 +36,5 @@ fetch(getData)
     card.appendChild(space);
     card.appendChild(logo);
   
-    document.querySelector('div.cards').appendChild(sponsorInfo);
+    document.querySelector('div.cards').appendChild(sponsor);
   }
