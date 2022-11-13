@@ -8,7 +8,7 @@ fetch(getData)
   .then(function (jsonObject) {
     console.table(jsonObject);
     const sponsors = jsonObject['businesses'];
-    sponsors.forEach(sponsorInfo);
+    sponsors.forEach(sponsors);
   });
   
   function displaySponsor(sponsorInfo) {
