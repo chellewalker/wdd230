@@ -15,11 +15,12 @@ async function apiFetch() {
           throw Error(await response.text());
       }
     } catch (error) {
-        console.log();
+        console.log(error);
     }
   }
 
   function displayResults(weatherData) {
+    const captionDesc = document.createElement('currentTemp');
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
 
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
