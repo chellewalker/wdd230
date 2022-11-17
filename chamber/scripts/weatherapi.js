@@ -18,11 +18,9 @@ async function apiFetch() {
         console.log();
     }
   }
-  
-  apiFetch();
 
   function displayResults(weatherData) {
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(1)}</strong>`;
+    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
 
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
@@ -31,3 +29,5 @@ async function apiFetch() {
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
   }
+
+  apiFetch();
