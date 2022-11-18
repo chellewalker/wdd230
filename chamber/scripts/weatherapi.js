@@ -20,8 +20,9 @@ async function apiFetch() {
   }
 
   function displayResults(weatherData) {
-    const captionDesc = document.createElement('currentTemp');
+    console.log(weatherData);
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    console.log(weatherData.main.temp);
 
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
