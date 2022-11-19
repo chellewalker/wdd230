@@ -1,7 +1,7 @@
 const currentTemp = document.querySelector('#current-temp');
 const currentCond = document.querySelector('#current-cond');
-const windSpeed = document.querySelector('#wind-speed');
-const windChill = document.querySelector('#wind-chill');
+const windSpeed   = document.querySelector('#wind-speed');
+const windChill   = document.querySelector('#wind-chill');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
@@ -23,7 +23,7 @@ async function apiFetch() {
   }
 
   function displayResults(weatherData) {
-    currentTemp.innerHTML = weatherData.main.temp.toFixed(1);
+    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
     currentCond.innerHTML = weatherData.weather[0].description;
     windSpeed.innerHTML = weatherData.wind.speed.toFixed(1);
     windChill.innerHTML = (35.74+(0.6215*currentTemp)-(35.75*(windSpeed**0.16))+(0.4275*currentTemp*(windSpeed**0.16))).toFixed(1);
