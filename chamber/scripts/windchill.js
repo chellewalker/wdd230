@@ -1,16 +1,39 @@
-function windchill() {
-    let temperature = 40;
-    let wind = 4.9;
-    let chill = (35.74+(0.6215*temperature)-(35.75*(wind**0.16))+(0.4275*temperature*(wind**0.16))).toFixed(2);
+const currentTemp = document.querySelector('#current-temp');
+const currentCond = document.querySelector('#current-cond');
+const windSpeed = document.querySelector('#wind-speed');
+const windChill = document.querySelector('#wind-chill');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
 
-    document.write('<p style="font-family: Times, serif; font-size: small;">Wind Speed: '+wind+' km/h</p>');
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Rexburg&units=imperial&appid=aaf7272ebbe454c23a30e327f99ef0bd'
 
-    if (temperature<=50) {
-        if (wind>3.0) {
-            document.write('<p style="font-family: Times, serif; font-size: small;">Wind Chill: '+chill+'</p>');
-        }
+async function apiFetch() {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data); // this is for testing the call
+         displayResults(data);
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
     }
-    else {
-        document.write('<p style="font-family: Times, serif; font-size: small;">N/A</p>');
-    }
-}
+  }
+
+  function displayResults(weatherData) {
+    currentTemp.innerHTML = weatherData.main.temp.toFixed(1);
+    currentCond.innerHTML = weatherData.weather[0].description;
+    windSpeed.innerHTML = weatherData.wind.speed.toFixed(1);
+    windChill.innerHTML = (35.74+(0.6215*currentTemp)-(35.75*(windSpeed**0.16))+(0.4275*currentTemp*(windSpeed**0.16))).toFixed(1);
+
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    const desc = weatherData.weather[0].description;
+
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+    captionDesc.textContent = desc;
+  }
+
+  apiFetch();
