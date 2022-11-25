@@ -24,10 +24,10 @@
 <div id="main">
 <br><br>
 <a href="https://www.facebook.com/">
-    <img src="images/facebook.webp" alt="facebook-logo" height=30>
+    <img src="images/facebook.webp" alt="facebook-logo">
 </a>
-<a href="https://twitter.com/">
-    <img src="images/twitter.webp" alt="twitter-logo" height=30>
+<a href="https://mastodon.social/explore/">
+    <img src="images/mastodon.webp" alt="mastodon-logo">
 </a>
 <button class="openbtn" onclick="openNav()">&#9776;</button>
 </div>
@@ -39,13 +39,52 @@ gbanner()
   <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html">Home</a>
-    <a href="join.html">Reservations</a>
+    <a>Reservations</a>
     <a href="discover.html">Our Amenities</a>
-    <a>Contact Us</a>
+    <a href="contact.html">Contact Us</a>
   </div>
-    <main>
-
-    </main>
+    <p>
+        From here, you can message us any questions or concerns that 
+        you might have. Simply provide the information below, and our 
+        staff will get back to you within 2-3 buisness days.
+    </p>
+        <form target="_blank" action="thankyou.html" method="get"><section>
+            <h2>Personal Details</h2>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+            <label for="title">Suffix:</label>
+            <input type="text" id="title" name="title" pattern="[A-Za-z0-9- .]+$" placeholder="Mr./Ms./etc"><br><br>
+        </section>
+        <section>
+            <h2>Contact Information</h2>
+            <label for="tel">Cell Phone Number:</label>
+            <input type="text" id="tel" name="tel" required><br><br>
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" required><br><br>
+            <p>Preferred Contact Method:</p><br>
+            <div class="member">
+                <input type="radio" id="call" name="contact" value="NP">
+                <label for="cell">Calling</label><br>
+                <input type="radio" id="text" name="contact" value="Bronze">
+                <label for="text">Texting</label><br>
+                <input type="radio" id="mail" name="contact" value="Bronze">
+                <label for="mail">Email</label><br>
+                <input type="hidden" id="date" name="date" value="CurrentTime"> 
+                <input type="hidden" id="time" name="time" value="CurrentDate">            </div><br>
+        </section>
+        <section>
+            <h2>Information</h2>
+            <div class="member">
+                <label for="description">What is it you wish to inquire about?</label><br>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+        </section>
+            <br>
+            <input type="submit" value="Submit" class="submit">
+            <br>
+        </form>
 <footer>
     <p><img src="images/logo.webp" alt="superplexgolfing-logo" height=100></p>
             <p>Superplex Golfing - <a href="contact.html">Contact Us</a></p>
@@ -53,5 +92,17 @@ gbanner()
         lupdate()
     </script>
 </footer>
+<script type="text/javascript">
+    var d = new Date();
+
+    // Set the value of the "date" field
+    document.getElementById("date").value = d.toDateString();
+
+    // Set the value of the "time" field
+    var hours = d.getHours();
+    var mins = d.getMinutes();
+    var seconds = d.getSeconds();
+    document.getElementById("time").value = hours + ":" + mins + ":" + seconds;
+</script>
 </body>
 </html>
