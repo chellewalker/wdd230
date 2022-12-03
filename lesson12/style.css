@@ -1,0 +1,148 @@
+header {
+    display: block;
+    background-color:black;
+    color:white;
+    padding:20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+footer {
+    display: block;
+    background-color:black;
+    color:white;
+    padding:20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8rem;
+}
+
+main section h2 {
+	color: white;
+    background-color: rgb(70, 70, 70);
+    padding:20px;
+    border-radius: 5px;
+    position: relative;
+        top: -5%;
+}
+
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	background-color: #eee;
+    border-radius: 5px;
+}
+
+main section p {
+	padding-left: 3%;
+}
+main section h1, h3 {
+	padding-left: 3%;
+}
+
+main section a {
+	padding-left: 3%;
+}
+
+main section:nth-child(2) {
+	display: none;
+	margin: 0.5rem;
+}
+nav {
+	background-color: #708080;
+	text-align: center;
+	box-shadow: 0 0 30px #333;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+}
+
+nav div {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+nav a:hover {
+	background-color: #bbb;
+	color: yellow;
+}
+
+
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 52.5em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	main section:nth-child(2) {
+		display: block;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 2;
+	}
+
+	main section picture {
+		display: block;
+	}
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+}
+
+/* Phone Views ******************************/
+@media only screen and (max-width: 52.5em) {
+	main {
+		grid-template-columns: 1fr;
+	}
+
+	main section:nth-child(2) {
+		display: block;
+	}
+
+	main section picture {
+		display: block;
+	}
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+	nav {
+		flex-direction: column;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 80em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 1;
+	}
+}
