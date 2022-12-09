@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Superplex Golfing Home Page Build">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/gbanner.js"></script>
+    <script src="scripts/lupdate.js"></script>
+    <script src="scripts/gdate.js"></script>
+    <script src="scripts/hero.js"></script>
+    <script src="scripts/nav.js"></script>
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <section>
+            <h1><img src="images/logo.webp" alt="superplexgolfing-logo"></h1>
+            <p><br>Bountiful Foods<br><script>
+                gdate()
+            </script></p>
+<div id="main">
+    <br><br>
+    <a href="https://www.facebook.com/">
+        <img src="images/facebook.webp" alt="facebook-logo">
+    </a>
+    <a href="https://mastodon.social/explore/">
+        <img src="images/mastodon.webp" alt="mastodon-logo">
+    </a>
+    <a href="https://twitter.com/">
+        <img src="images/twitter.webp" alt="twitter-logo">
+    </a>
+  </div>
+  </section>
+  <script>
+    gbanner()
+</script>
+</header>
+
+    <main>
+        <section>
+            <h1>Our Cause</h1>
+            <p>
+                Fruit is the backbone of a healthy diet, and any 
+                way to increase its prevaliance is a worthy cause. 
+                At Bountiful Foods, we help to acheive this cause through 
+                the sharing of different combinations for fresh drinks!
+            </p>
+        </section>
+        <section>
+            <h1>Share Your Combinations!</h1>
+            <p>Have a combination you think others would appriciate? 
+                Feel free to submit one through our database!
+            </p>
+            <button type="submit" class="center" onclick="window.location.href='fresh.html';">Make it Fresh!</button>
+            <br>
+            <script>hero()</script>
+            <p>For any questions, contact our PR manager at pr.fakeemail.com
+            </p>
+        </section>
+        <section>
+            <h1>Upcoming Events</h1>
+            <p>We here at Superplex Golfing are proud to host numerous events to 
+                keep your experiences fresh when visiting; the coming events of 
+                next month include:
+            </p>
+            <ul>
+                <li>On the 11th, be ready to experience a blast as water features 
+                    will be linked to participating rooms; players can compete to 
+                    spoak one another in a shower upon winning their golf duel!
+                </li>
+                <li>On the 18th, get ready for things to get tropical; Superplex 
+                    Golfing will be decked for a more festive atmosphere that can 
+                    ready help visitors get in the mood for summer!
+                </li>
+                <li>On the 25th, celebrate the new sports season with an expanded 
+                    menu with classic sports snacks and live games at each of the 
+                    availible golfing booths!
+                </li>
+            </ul>
+            <p></p>
+        </section>
+        <section>
+            <h1>Your Submissions</h1>
+            <p>Thank you for your support! Currently, we have records of 
+                <span id="submissions"></span>
+                 of your fruit combinations!
+            </p>
+        </section>
+        <section>
+            <h1>Partnerships</h1>
+            <p>Superplex Golfing is proud to be sponsored by several local 
+                buisnesses in the area. A full list of our contributers can be found
+                <a href="directory.html">here</a>, and they include:
+                <ul>
+                    <li>Idaho Websites</li>
+                    <li>Surge Web Design</li>
+                    <li>Graphic Zen</li>
+                    <li>Peppershock Media</li>
+                    <li>Flash Tech Services</li>
+                    <li>Metro Express Car Wash, LLC</li>
+                    <li>Critical Electronics</li>
+                    <li>Turgent Turgent</li>
+                    <li>Boise Cola</li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <h1>Weather</h1>
+            <figure><strong>
+                <img src="" alt="" id="weather-icon">
+                <figcaption></figcaption>
+            </figure>
+            <p>Current Temperature: <span id="current-temp"></span>&deg; F</p>
+            <p><span id="current-cond"></span></p>
+            <p>Humidity: <span id="current-hum"></span></p>
+        </section>
+    </main>
+<footer>
+    <p><img src="images/logo.webp" alt="superplexgolfing-logo" height=100></p>
+            <p>Superplex Golfing - <a href="about.html">About Us</a></p>
+    <script>
+        lupdate()
+    </script>
+</footer>
+<script src="scripts/weatherapi.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* Tablet Views ******************************/
+@media only screen and (max-width: 1280px) and (min-width: 840px) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	main section {
+		display: block;
+        grid-column: span 3;
+	}
+
+	main section:nth-child(5) {
+		grid-column: span 2;
+	}
+
+    main section:nth-child(6) {
+		grid-column: span 1;
+	}
+
+	main section picture {
+		display: block;
+	}
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+
+	.sidebar {
+		grid-template-columns: 1fr;
+	}
+	header img {
+		max-width: 45%;
+		height: auto;
+	}
+	header a img {
+		max-width: 18%;
+		height: auto;
+	}
+	.center {
+		max-width: 50%;
+		height: auto;
+	  }
+	.img-wrapper img:hover{
+		box-shadow: 
+		-2px 4px 4px rgb(63, 63, 63),
+		-3px 6px 6px gray,
+		-4px 8px 8px lightgray;
+	}
+}

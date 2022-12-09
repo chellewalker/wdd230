@@ -1,0 +1,31 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 1280px) {
+	main {
+		grid-template-columns: 1fr 2fr 1fr;
+	}
+
+	main section:nth-child(2) {
+		grid-row: span 2;
+	}
+    main section:nth-child(3) {
+		grid-row: span 3;
+	}
+	header img {
+		max-width: 25%;
+		height: auto;
+	}
+	header a img {
+		max-width: 10%;
+		height: auto;
+	}
+	.center {
+		max-width: 60%;
+		height: auto;
+	  }
+	.img-wrapper img:hover{
+		box-shadow: 
+		-2px 4px 4px rgb(63, 63, 63),
+		-3px 6px 6px gray,
+		-4px 8px 8px lightgray;
+	}
+}
